@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  # added 3Oct per Lesson 4: The First Page
+  root 'quotes#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
