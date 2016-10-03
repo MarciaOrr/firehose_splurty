@@ -1,0 +1,26 @@
+
+[Web Dev]:  /vagrant/src/splurty $ rails generate model quote
+Running via Spring preloader in process 13010
+      invoke  active_record
+      create    db/migrate/20161003205746_create_quotes.rb
+      create    app/models/quote.rb
+      invoke    test_unit
+      create      test/models/quote_test.rb
+      create      test/fixtures/quotes.yml
+[Web Dev]:  /vagrant/src/splurty $ rake db:migrate
+== 20161003205746 CreateQuotes: migrating =====================================
+-- create_table(:quotes)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+PG::DuplicateTable: ERROR:  relation "quotes" already exists
+: CREATE TABLE "quotes" ("id" serial primary key, "saying" character varying(255), "author" character varying(255), "created_at" timestamp, "updated_at" timestamp)
+/vagrant/src/splurty/db/migrate/20161003205746_create_quotes.rb:3:in `change'
+ActiveRecord::StatementInvalid: PG::DuplicateTable: ERROR:  relation "quotes" already exists
+: CREATE TABLE "quotes" ("id" serial primary key, "saying" character varying(255), "author" character varying(255), "created_at" timestamp, "updated_at" timestamp)
+/vagrant/src/splurty/db/migrate/20161003205746_create_quotes.rb:3:in `change'
+PG::DuplicateTable: ERROR:  relation "quotes" already exists
+/vagrant/src/splurty/db/migrate/20161003205746_create_quotes.rb:3:in `change'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+[Web Dev]:  /vagrant/src/splurty $
