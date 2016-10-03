@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Added 3Oct2016 per Step 4: Prepare for Heroku
+gem 'rails_12factor', group: :production
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
