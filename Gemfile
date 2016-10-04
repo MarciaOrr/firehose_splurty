@@ -3,13 +3,18 @@ source 'https://rubygems.org'
 # Added 3Oct2016 per Step 4: Prepare for Heroku
 gem 'rails_12factor', group: :production
 
+#Added 4Oct2016 per Step 7: Twitter Bootstrap 3
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'sprockets', '2.11.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
 gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+# Use SCSS for stylesheets; use for bootstrap-sass on line 7
+# Modified 4Oct. Need different 'sass-rails' for Twitter Bootstrap. Comment line 16, new line 17
+# gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
