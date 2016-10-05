@@ -32,14 +32,20 @@ header {
                 "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L",
                 Georgia, serif;
   font-style: italic;
+  font-size: 24px;
   padding-top: 26px;
 }
 
-.links a {
-  color: black;
-  font-size: 18px;
-  border-bottom: 1px solid #cc00cc;
+.links {
   padding-top: 26px;
+}
+
+a {
+  color: #009933;
+  font-size: 18px;
+  margin: 0px 15px 0px 15px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #009933;
 }
 
 hr {
