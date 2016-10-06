@@ -1,9 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-header {
-  border-top: 9px solid #222222;
-}
+/* ----- Classes ----- */
 
 .circle {
     font-weight:bold;
@@ -40,19 +38,39 @@ header {
   padding-top: 26px;
 }
 
-a {
+.next-quote {
+  color: #cc00cc;
   font-family: 'fontinregular', sans-serif;
-  font-size: 18px;
-  color: ForestGreen;
-
-  margin: 0px 15px 0px 15px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid ForestGreen;
+  font-size: 24px;
+  border-bottom: 3px groove #cc00cc;
 }
 
-hr {
-  border-top: 4px double #32CD32;
+.footer-blurb {
+  text-align: right;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, 
+               "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond",
+                "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L",
+                Georgia, serif;
+  font-style: italic;
+  font-size: 10px;
+}
+.footer-blurb a {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.container {
+  width: 850px;
+  margin: 0px
+}
+
+.clear {
   clear:both;
+}
+
+/* ----- HTML Tags ----- */
+header {
+  border-top: 9px solid #222222;
 }
 
 h1, h2 {
@@ -60,7 +78,6 @@ h1, h2 {
   width: 800px;
   margin: 10px 0px 0px 20px;
 }
-
 h1 {
   text-align: justify;
   font-weight: bold;
@@ -72,6 +89,17 @@ h2 {
   font-size: 24px;
   color: ForestGreen;
 }
-.clear {
+
+a {
+  font-family: 'fontinregular', sans-serif;
+  font-size: 18px;
+  color: ForestGreen; 
+  margin: 0px 15px 0px 15px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid ForestGreen;
+}
+
+hr {
+  border-top: 4px double #32CD32;
   clear:both;
 }
