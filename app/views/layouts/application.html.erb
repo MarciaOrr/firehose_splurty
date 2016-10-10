@@ -11,19 +11,23 @@
 <body>
   <header>
     <div class='container'>
-      <div class='col-xs-3 circle'>
-       <br />
-          FEEL
-          <br />
-          BETTER
-          <br />
-          NOW
-      </div>
+        <div class='col-xs-3'>
+          <%= link_to root_path do %>
+            <div class='circle'>
+              <br />
+              FEEL
+              <br />
+              BETTER
+              <br />
+              NOW
+            </div>
+          <% end %>
+        </div>
       <div class='col-xs-6 slogan'>
-        Splurting out uplifting quotes <br /> for a bad day
+        Splurting out uplifting quotes for a bad day
       </div>
       <div class='col-xs-3 links'>
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </div>
@@ -38,7 +42,7 @@
 <div class='footer'>
   <div class='container'>
     <div class='col-xs-6'>
-      <%= link_to "This isn't enough, I still feel bad", "#", class:'next-quote' %>
+      <%= link_to "This isn't enough, I still feel bad", root_path, class:'next-quote' %>
     </div>
     <div class='col-xs-6 footer-blurb'>
       Proudly hacked in Colorado Springs, CO by marcia Marcia MARCIA<br />
